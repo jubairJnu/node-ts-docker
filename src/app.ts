@@ -6,6 +6,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/error", (req, res) => {
+  res.send("This is Error");
   throw new Error("This is faced Error");
 });
 
