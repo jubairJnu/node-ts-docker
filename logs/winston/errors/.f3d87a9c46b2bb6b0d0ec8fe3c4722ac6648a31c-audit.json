@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/jubair/learning/docker/basic-express/logs/winston/errors/.f3d87a9c46b2bb6b0d0ec8fe3c4722ac6648a31c-audit.json",
+    "files": [
+        {
+            "date": 1748339395470,
+            "name": "/Users/jubair/learning/docker/basic-express/logs/winston/errors/docker-2025-05-27-15-error.log",
+            "hash": "d0b03da42b094b8f371c64126402e2ab6bc36d38af3e2d10c5970a939ac5d179"
+        }
+    ],
+    "hashType": "sha256"
+}

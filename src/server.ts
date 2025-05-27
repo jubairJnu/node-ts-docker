@@ -1,5 +1,6 @@
 import { Server } from "http";
 import app from "./app";
+import { errorlogger, logger } from "./shared/logger";
 
 let server: Server;
 const port = 3001;
@@ -8,9 +9,11 @@ async function main() {
   try {
     server = app.listen(port, () => {
       console.log(`app is running on port ${port}`);
+      logger.info(`app is running on port ${port}`);
     });
   } catch (err) {
     console.log(err);
+    errorlogger.error(err);
   }
 }
 

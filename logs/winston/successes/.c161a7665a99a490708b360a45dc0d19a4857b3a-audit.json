@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/jubair/learning/docker/basic-express/logs/winston/successes/.c161a7665a99a490708b360a45dc0d19a4857b3a-audit.json",
+    "files": [
+        {
+            "date": 1748339395469,
+            "name": "/Users/jubair/learning/docker/basic-express/logs/winston/successes/docker-2025-05-27-15-49-55-success.log",
+            "hash": "250fb83fdd1de177b21c2b3f144559cf5cdc67ea59aee14c9a1047aea14fa4a2"
+        },
+        {
+            "date": 1748339594614,
+            "name": "/Users/jubair/learning/docker/basic-express/logs/winston/successes/docker-2025-05-27-15-53-14-success.log",
+            "hash": "46ffcdb18e6e14070c9e6780601b8991fecbc3afab0269e8ec30fc29f671adf4"
+        }
+    ],
+    "hashType": "sha256"
+}

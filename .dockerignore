@@ -1,0 +1,8 @@
+.env
+node_modules
+dist
+.vscode
+.vercel
+.env.local
+.env.development.local
+.git
