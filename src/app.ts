@@ -18,6 +18,13 @@ app.get("/", (req, res) => {
     </html>`);
 });
 
+app.get("/todos", async (req: Request, res: Response) => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+  // const response = await fetch("http://ts-docker-container:5000/api/v1/users");
+  const todos = await response.json();
+  res.status(200).json(todos);
+});
+
 app.get("/error", (req, res) => {
   throw new Error("This is faced Error");
 });
