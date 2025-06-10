@@ -9,6 +9,11 @@
             "date": 1748339395470,
             "name": "/Users/jubair/learning/docker/basic-express/logs/winston/errors/docker-2025-05-27-15-error.log",
             "hash": "d0b03da42b094b8f371c64126402e2ab6bc36d38af3e2d10c5970a939ac5d179"
+        },
+        {
+            "date": 1749524443850,
+            "name": "/Users/jubair/learning/docker/basic-express/logs/winston/errors/docker-2025-06-10-09-error.log",
+            "hash": "43e6b1b4ac65ceab573f6e1be858e3d4b891e1e9f0dc382da6aa36c0ef609530"
         }
     ],
     "hashType": "sha256"

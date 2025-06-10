@@ -1,8 +1,8 @@
-import httpStatus from 'http-status';
+import httpStatus from "http-status";
 
-import { UserServices } from './user.service';
-import { catchAsync } from '../../../utils/catchAsync';
-import sendResponse from '../../../utils/sendResponse';
+import { UserServices } from "./user.service";
+import { catchAsync } from "../../utils/catchAsync";
+import sendResponse from "../../utils/sendResponse";
 
 const userRegister = catchAsync(async (req, res) => {
   console.log(req.body);
@@ -15,7 +15,7 @@ const userRegister = catchAsync(async (req, res) => {
   sendResponse(res, {
     success: true,
     statusCode: httpStatus.OK,
-    message: 'User Created Successfully',
+    message: "User Created Successfully",
     data: user,
   });
 });
@@ -26,7 +26,7 @@ const getAllUsers = catchAsync(async (req, res) => {
   sendResponse(res, {
     success: true,
     statusCode: httpStatus.OK,
-    message: 'Users Retrieved Successfully',
+    message: "Users Retrieved Successfully",
     data: users,
   });
 });
@@ -37,7 +37,7 @@ const getSingleUser = catchAsync(async (req, res) => {
   sendResponse(res, {
     success: true,
     statusCode: httpStatus.OK,
-    message: 'User Retrieved Successfully',
+    message: "User Retrieved Successfully",
     data: user,
   });
 });

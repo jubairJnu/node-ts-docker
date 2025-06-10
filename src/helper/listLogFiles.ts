@@ -2,7 +2,7 @@
 import fs from "fs";
 import path from "path";
 
-// Helper function to list log files
+// Helper function to list log files to
 export const listLogFiles = (logType: string): string[] => {
   const logDir = path.join(process.cwd(), "logs", "winston", logType);
   try {

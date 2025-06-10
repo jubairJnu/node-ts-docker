@@ -1,9 +1,22 @@
 import express, { Application, NextFunction, Request, Response } from "express";
 import { errorlogger } from "./shared/logger";
 import path from "path";
+import cors from "cors";
 import { LogsRoutes } from "./modules/Logs/logs.routes";
+import router from "./routes";
 const app: Application = express();
 app.use(express.static(path.join(__dirname, "../public")));
+
+app.use(
+  cors({
+    credentials: true,
+    origin: "http://localhost:3000",
+  })
+);
+
+// Parsers
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.send(` <html>
@@ -18,8 +31,10 @@ app.get("/", (req, res) => {
     </html>`);
 });
 
+app.use("/api/v1", router);
+
 app.get("/todos", async (req: Request, res: Response) => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
   // const response = await fetch("http://ts-docker-container:5000/api/v1/users");
   const todos = await response.json();
   res.status(200).json(todos);
