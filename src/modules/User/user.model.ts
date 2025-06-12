@@ -1,4 +1,4 @@
-/* eslint-disable no-useless-escape */
+
 import { Schema, model } from 'mongoose';
 import { TUser } from './user.interface';
 
